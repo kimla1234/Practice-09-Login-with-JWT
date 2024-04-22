@@ -8,8 +8,8 @@ const TestJWTPage = () => {
     const [refreshToken, setRefreshToken] = useState(false);
 
     const handleLogin = async () => {
-        const email = "kdeylester@gmail.com";
-        const password = "kdey@@168";
+        const email = "chhoeurnkimla@gmail.com";
+        const password = "Kimla110803";
         fetch(process.env.NEXT_PUBLIC_BASE_URL_LOCALHOST + "login/", {
             method: "POST",
             headers: {
@@ -29,7 +29,7 @@ const TestJWTPage = () => {
     }
     const handleUpdate = async () => {
         const body = {
-            name: "Product Update By kdeyhenessey"
+            name: "Product Update "
         }
         const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}products/${507}/`,{
             method: "PATCH",
